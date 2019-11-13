@@ -189,11 +189,11 @@ export class MatDatetimepickerCalendar<D> implements AfterContentInit, OnDestroy
   _calendarState: string;
 
   constructor(private _elementRef: ElementRef,
-              private _intl: MatDatepickerIntl,
-              private _ngZone: NgZone,
-              @Optional() private _adapter: DatetimeAdapter<D>,
-              @Optional() @Inject(MAT_DATETIME_FORMATS) private _dateFormats: MatDatetimeFormats,
-              changeDetectorRef: ChangeDetectorRef) {
+    private _intl: MatDatepickerIntl,
+    private _ngZone: NgZone,
+    @Optional() private _adapter: DatetimeAdapter<D>,
+    @Optional() @Inject(MAT_DATETIME_FORMATS) private _dateFormats: MatDatetimeFormats,
+    changeDetectorRef: ChangeDetectorRef) {
     if (!this._adapter) {
       throw createMissingDateImplError("DatetimeAdapter");
     }
@@ -223,26 +223,24 @@ export class MatDatetimepickerCalendar<D> implements AfterContentInit, OnDestroy
 
   /** Handles date selection in the month view. */
   _dateSelected(date: D): void {
-    if (this.type == "date") {
-      if (!this._adapter.sameDate(date, this.selected)) {
-        this.selectedChange.emit(date);
-      }
-    } else {
+    if (this.type !== "date") {
       this._activeDate = date;
       this._currentView = "clock";
+    }
+    if (!this._adapter.sameDate(date, this.selected)) {
+      this.selectedChange.emit(date);
     }
   }
 
   /** Handles month selection in the year view. */
   _monthSelected(month: D): void {
-    if (this.type == "month") {
-      if (!this._adapter.sameMonthAndYear(month, this.selected)) {
-        this.selectedChange.emit(this._adapter.getFirstDateOfMonth(month));
-      }
-    } else {
+    if (this.type !== "month") {
       this._activeDate = month;
       this._currentView = "month";
       this._clockView = "hour";
+    }
+    if (!this._adapter.sameMonthAndYear(month, this.selected)) {
+      this.selectedChange.emit(this._adapter.getFirstDateOfMonth(month));
     }
   }
 
@@ -250,10 +248,9 @@ export class MatDatetimepickerCalendar<D> implements AfterContentInit, OnDestroy
     if (this._clockView !== "minute") {
       this._activeDate = date;
       this._clockView = "minute";
-    } else {
-      if (!this._adapter.sameDatetime(date, this.selected)) {
-        this.selectedChange.emit(date);
-      }
+    }
+    if (!this._adapter.sameDatetime(date, this.selected)) {
+      this.selectedChange.emit(date);
     }
   }
 

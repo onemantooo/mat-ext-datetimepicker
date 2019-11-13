@@ -1,8 +1,8 @@
 {
-  "name": "@mat-datetimepicker/moment",
-  "version": "2.0.1",
-  "repository": "https://github.com/kuhnroyal/mat-datetimepicker.git",
-  "author": "PL <kuhnroyal@gmail.com>",
+  "name": "@mat-ext/datetimepicker-moment",
+  "version": "6.0.0-beta",
+  "repository": "https://github.com/onemantooo/mat-datetimepicker.git",
+  "author": "RU <onemantooo@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "@angular/material": "^6.3.3",
