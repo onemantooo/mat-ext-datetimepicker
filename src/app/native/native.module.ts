@@ -7,7 +7,7 @@ import {
 } from "@angular/material";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatDatetimepickerModule } from "@mat-datetimepicker/core";
+import { MatDatetimepickerModule } from "@mat-ext/datetimepicker-core";
 import { NativeDatetimeComponent } from "./native.component";
 
 @NgModule({

@@ -7,7 +7,7 @@
   "peerDependencies": {
     "@angular/material": "^6.3.3",
     "@angular/material-moment-adapter": "^6.3.3",
-    "@mat-datetimepicker/core": "2.0.0",
+    "@mat-ext/datetimepicker-core": "2.0.0",
     "moment": "^2.18.1"
   }
 }

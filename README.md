@@ -10,19 +10,19 @@ The datetimepicker is taken from [Promact/md2](https://github.com/Promact/md2) a
 
 Like the @angular/material datepicker it contains a native-datetime-adapter as well as a moment-datetime-adapter.
 
-[![Latest Stable Version](https://img.shields.io/npm/v/@mat-datetimepicker/core.svg)](https://www.npmjs.com/package/@mat-datetimepicker/core)
-[![License](https://img.shields.io/npm/l/@mat-datetimepicker/core.svg)](https://www.npmjs.com/package/@mat-datetimepicker/core)
-[![NPM Downloads](https://img.shields.io/npm/dm/@mat-datetimepicker/core.svg)](https://www.npmjs.com/package/@mat-datetimepicker/core)
+[![Latest Stable Version](https://img.shields.io/npm/v/@mat-ext/datetimepicker-core.svg)](https://www.npmjs.com/package/@mat-ext/datetimepicker-core)
+[![License](https://img.shields.io/npm/l/@mat-ext/datetimepicker-core.svg)](https://www.npmjs.com/package/@mat-ext/datetimepicker-core)
+[![NPM Downloads](https://img.shields.io/npm/dm/@mat-ext/datetimepicker-core.svg)](https://www.npmjs.com/package/@mat-ext/datetimepicker-core)
 
 ### Installation
 Install:
 ```
-yarn install @mat-datetimepicker/core
+yarn install @mat-ext/datetimepicker-core
 ```
 And for the moment adapter:
 ```
 yarn install @angular/material-moment-adapter
-yarn install @mat-datetimepicker/moment
+yarn install @mat-ext/datetimepicker-moment
 ``` 
 
 ### Performing a local build
@@ -38,14 +38,14 @@ cd my-project
 Add the dependencies to your `package.json`:
 ```
 "dependencies": {
-    "@mat-datetimepicker/core": "2.0.0",
-    "@mat-datetimepicker/moment": "2.0.0",
+    "@mat-ext/datetimepicker-core": "2.0.0",
+    "@mat-ext/datetimepicker-moment": "2.0.0",
 }
 ```
 Link the local built modules:
 ```
-yarn link "@mat-datetimepicker/core"
-yarn link "@mat-datetimepicker/moment"
+yarn link "@mat-ext/datetimepicker-core"
+yarn link "@mat-ext/datetimepicker-moment"
 ``` 
 
 ### Import  & configuration
@@ -77,7 +77,7 @@ imports: [
 ```
 ### Theming
 ```
-@import '~@mat-datetimepicker/core/datetimepicker/datetimepicker-theme.scss';
+@import '~@mat-ext/datetimepicker-core/datetimepicker/datetimepicker-theme.scss';
 
 // Using the $theme variable from the pre-built theme you can call the theming function
 @include mat-datetimepicker-theme($theme);

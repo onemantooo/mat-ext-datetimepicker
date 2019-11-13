@@ -17,16 +17,16 @@
       "dom"
     ],
     "paths": {
-      "@mat-datetimepicker/core": [
+      "@mat-ext/datetimepicker-core": [
         "dist/core"
       ],
-      "@mat-datetimepicker/core/*": [
+      "@mat-ext/datetimepicker-core/*": [
         "dist/core/*"
       ],
-      "@mat-datetimepicker/moment": [
+      "@mat-ext/datetimepicker-moment": [
         "dist/moment"
       ],
-      "@mat-datetimepicker/moment/*": [
+      "@mat-ext/datetimepicker-moment/*": [
         "dist/moment/*"
       ]
     }

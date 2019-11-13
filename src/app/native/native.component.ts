@@ -14,7 +14,7 @@ import {
   MAT_NATIVE_DATETIME_FORMATS,
   MatDatetimepickerFilterType,
   NativeDatetimeAdapter
-} from "@mat-datetimepicker/core";
+} from "@mat-ext/datetimepicker-core";
 
 @Component({
   selector: "app-native-datetime",
